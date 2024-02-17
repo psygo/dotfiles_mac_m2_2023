@@ -1,7 +1,14 @@
 ##################################################################################
 
-# ctrl - right : yabai -m space --focus next
-# ctrl - left : yabai -m space --focus prev
+# From [@Allaman's config](https://github.com/Allaman/dotfiles/blob/master/skhdrc).
+cmd - 1 : yabai -m space --focus prev
+cmd - 2 : yabai -m space --focus next
+
+cmd + shift - 1  : yabai -m window --space prev
+cmd + shift - 2  : yabai -m window --space next
+
+ctrl - right  : yabai -m space --focus next
+ctrl - left   : yabai -m space --focus prev
 
 # Layout
 
