@@ -8,9 +8,7 @@
 	clean = git-lfs clean -- %f
 [credential]
 	credentialStore = gpg
-	helper = cache
-	helper = 
-	helper = /usr/local/share/gcm-core/git-credential-manager
+	helper = osxkeychain
 [alias]
 	cmp = "!f() { git add -A && git commit -m \"$@\" && git push;  }; f"
 	cm = "!f() { git add -A && git commit -m \"$@\";  }; f"
