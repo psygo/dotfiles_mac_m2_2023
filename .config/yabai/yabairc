@@ -33,3 +33,9 @@ yabai -m config mouse_action1 move
 # set modifier + right-click drag to resize window
 yabai -m config mouse_action2 resize
 
+#-----------------------------------------------------------
+# Borders with JankyBorders
+
+borders active_color=0xffff0000 inactive_color=0xff494d64 width=3.0 &
+
+#-----------------------------------------------------------
