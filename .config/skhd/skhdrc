@@ -1,11 +1,11 @@
 ##################################################################################
 # Changing Workspaces
 
-cmd - h : yabai -m space --focus prev
-cmd - l : yabai -m space --focus next
+ctrl - h : yabai -m space --focus prev
+ctrl - l : yabai -m space --focus next
 
-ctrl - right  : yabai -m space --focus next
-ctrl - left   : yabai -m space --focus prev
+ctrl - right : yabai -m space --focus next
+ctrl - left  : yabai -m space --focus prev
 
 ##################################################################################
 
