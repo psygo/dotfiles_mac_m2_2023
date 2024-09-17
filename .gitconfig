@@ -1,6 +1,7 @@
 [user]
 	name = Philippe Fanaro
 	email = philippefanaro@gmail.com
+	signingkey = 2EC2675C8F72E852
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
@@ -8,7 +9,8 @@
 	clean = git-lfs clean -- %f
 [credential]
 	credentialStore = gpg
-	helper = osxkeychain
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
 [alias]
 	cmp = "!f() { git add -A && git commit -m \"$@\" && git push;  }; f"
 	cm = "!f() { git add -A && git commit -m \"$@\";  }; f"

@@ -1,6 +1,14 @@
 #-----------------------------------------------------------
 # Settings
 
+# Every time there's an upgrade, you're gonna need to run the following command:
+#
+# ```sh
+# echo "$(whoami) ALL=(root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | cut -d " " -f 1) $(which yabai) --load-sa" | sudo tee /private/etc/sudoers.d/yabai
+# ```
+#
+# For more on this, check out [this section of the docs](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#configure-scripting-addition)
+
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
 

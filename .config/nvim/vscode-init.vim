@@ -5,7 +5,9 @@ nnoremap <SPACE> <Nop>
 let mapleader=" "
 
 "Wrapped Lines
-"set wrap
+set nowrap
+nmap j gj
+nmap k gk
 
 "When pasting, go to the end of the pasted block
 noremap p gp

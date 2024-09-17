@@ -1,6 +1,9 @@
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
+export GPG_TTY=$(tty)
+gpgconf --launch gpg-agent
+
 #-----------------------------------------------------------
 
 # Powerlevel10k
@@ -17,6 +20,7 @@ fi
 # PATH
 
 export PATH="/opt/homebrew/opt/python/libexec/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 #-----------------------------------------------------------
 
@@ -60,3 +64,8 @@ esac
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 #-----------------------------------------------------------
+
+fpath+=~/.zfunc
+
+# Created by `pipx` on 2024-07-13 11:49:11
+export PATH="$PATH:/Users/phili/.local/bin"
