@@ -1,3 +1,9 @@
+# Android Emulator Stuff
+export ANDROID_HOME=/Users/phili/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 

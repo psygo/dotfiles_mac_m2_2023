@@ -1,7 +1,7 @@
 [user]
 	name = Philippe Fanaro
 	email = philippefanaro@gmail.com
-	signingkey = 2EC2675C8F72E852
+	signingkey = japan_2025
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
