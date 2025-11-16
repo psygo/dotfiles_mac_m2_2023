@@ -43,6 +43,9 @@ yabai -m config mouse_action1 move
 # set modifier + right-click drag to resize window
 yabai -m config mouse_action2 resize
 
+ctrl - left  : yabai -m space --focus prev
+ctrl - right : yabai -m space --focus next
+
 #-----------------------------------------------------------
 # Borders with JankyBorders
 
