@@ -46,6 +46,9 @@ yabai -m config mouse_action2 resize
 ctrl - left  : yabai -m space --focus prev
 ctrl - right : yabai -m space --focus next
 
+# From [this recommendation by @fakebizprez](https://github.com/koekeishiya/yabai/issues/2699#issuecomment-3540433672)
+ctrl + cmd - f : yabai -m window --toggle zoom-fullscreen
+
 #-----------------------------------------------------------
 # Borders with JankyBorders
 
